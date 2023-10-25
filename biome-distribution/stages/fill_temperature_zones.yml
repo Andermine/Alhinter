@@ -8,13 +8,15 @@ stages:
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
       FROSTY_FINGERS: 2
-      COLD_STEPPE: 2
+      COLD_STEPPE: 1
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
       MOUNTAIN_MIRRORS: 2
       ALPINE_ASCENDANCY: 1
+      BARE_BOULDERFIELDS: 1
       TUNDRA_TRACKS: 2
       FROZEN_FUNGI: 1
+      SNOWY_SPIRES: 2
   - type: REPLACE
     from: medium
     sampler:
@@ -36,6 +38,7 @@ stages:
       BAMBOO_BASIN: 2
       BADLANDS_BALCONIES: 2
       SCARLET_SANCTUARY: 2
+      GLOOMY_GORGE: 2
       ROCKY_REFUGE: 1
       _plateao: 1
       # LAND_MEDIUM_A: 1
