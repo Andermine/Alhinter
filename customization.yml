@@ -46,7 +46,7 @@ global-scale: 1
 terrain-base-y-level: 65
 # Default: 65
 
-terrain-height: 100
+terrain-height: 230
 # Default: 230
 
 terrain-ocean-base-y-level: 60
@@ -86,7 +86,7 @@ spawn-island-elevation-scale: 0.3
 # Continental
 # ---
 
-continental-scale: 0.8
+continental-scale: 1
 # Controls the scale of land / coastal / oceanic distribution. Increasing
 # this produces larger landmasses and larger oceans, and vice-versa when
 # decreasing it.
@@ -94,6 +94,9 @@ continental-scale: 0.8
 
 continental-offset: 0.2
 # Default: 0.2
+
+continental-spread: 1
+# Default: 1
 
 continental-coast-width: 30
 # Default: 30
@@ -114,17 +117,82 @@ elevation-scale: 1
 #        can check out the parameters under the 'Terrain' section.
 # Default: 1
 
+elevation-multiplier: 1
+# Multiplier on the elevation value
+# If set to 0, elevation will be the value set by 'elevation-offset' defined below
+# Default: 1
+
+elevation-offset: 0
+# Adds / subtracts from the elevation value
+# Default: 0
+
 elevation-highlands-threshold: 0.4
 # Default: 0.4
 
-elevation-flatlands-threshold: 0.1
+elevation-lowlands-threshold: 0.1
 # Default: 0.1
+
+elevation-factor-continental: 1
+# Determines if terrain height will be reduced closer to coasts. This
+# is used to prevent mountains forming right up against the ocean, and
+# gradually smooths the terrain into coasts. The continental values at which
+# terrain goes from 100% to flat can be customized with the options below.
+# 1 = true, 0 = false
+# Default: 1
+
+elevation-continental-full-height-threshold: 0.35
+# The continental value at which terrain height is 100%, only applicable if
+# the terrain-factor-continental option is enabled
+# Default: 0.35
+
+elevation-continental-flat-threshold: -0.3
+# The continental value at which terrain height will be flat, only applicable if
+# the terrain-factor-continental option is enabled
+# Default: -0.3
+
+elevation-factor-rivers: 1
+# Determines if terrain will gradually reduce closer to rivers.
+# 1 = true, 0 = false
+# Default: 1
+
+elevation-factor-spawn-island: 1
+# Determines if spawn island noise affects terrain, 1 = true, 0 = false
+# Default: 1
+
+elevation-spawn-island-scale: 0.3
+# Scales elevation within the spawn island. E.g 0.3 means elevation is set to 30%
+# within the spawn island.
+# Default: 0.3
+
+elevation-fuzz: 0.25
+# Adds a slight bit of fuzziness to elevation, roughening terrain block countours
+# and steep hills that look overly smooth. Small 1 block divots tend to be produced
+# by this fuzzing. Recommended to be a small number between 0 and 0.5.
+# Setting to 0 removes any fuzzing.
+# Default: 0.25
+
+# ---
+# Flatness
+# ---
+
+flatness-scale: 1
+# Default: 1
+
+flatness-percent: 0.25
+# Default: TODO
+
+flatness-blend: 0.35
+# Default: TODO
+
+flatness-factor: 0.95
+# How much to flatten by. 1 = 100% flat, 0 = no flattening
+# Default: 0.95
 
 # ---
 # Temperature
 # ---
 
-temperature-scale: 0.4
+temperature-scale: 0.5
 # Controls the scale of temperature zones. Most biomes are placed according to
 # a temperature map so hot biomes can't generate next to cold biomes, as well as
 # allowing for biomes of similar temperatures to generate together. Increasing this
@@ -193,6 +261,11 @@ cave-biome-scale: 1
 # Oceans
 # ---
 
+ocean-shallow-threshold: -0.15
+# Elevation above this threshold is set to generate as shallow ocean. Lower number = larger area of shallow ocean
+# and vice versa.
+# Default: -0.1
+
 ocean-deep-threshold: -0.8
 # Elevation at which deep oceans are placed. Higher number = larger area of deep ocean
 # and vice versa.
@@ -206,6 +279,10 @@ river-spread-scale: 1
 # Controls how far / close apart rivers generally are, larger scale = further apart
 # rivers, smaller scale = closer packed together rivers.
 # Default: 1
+
+river-min-width: 13
+# Controls in blocks the minimum width of rivers.
+# Default: 13
 
 river-max-width: 20
 # Controls in blocks how wide rivers can get.
