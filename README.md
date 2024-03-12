@@ -2,7 +2,7 @@
 
 > This pack is still in a testing phase, so bugs and issues are to be expected
 
-An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
+An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default Terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
 Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations.
@@ -10,15 +10,15 @@ Origen focuses on adding a new and more creative / diverse terrain generation, w
 You can find Terra - the main project this config pack is designed for
 [here](https://github.com/PolyhedralDev/Terra).
 
-Huge thanks to everyone on the terra discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [barebones texture pack](https://www.curseforge.com/minecraft/texture-packs/bb).
+Huge thanks to everyone on the Terra Discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [Bare Bones texture pack](https://modrinth.com/resourcepack/bare-bones).
 
-Most top level settings, such as biome and river sizes, can be found in the file [costumization.yml](customization.yml).
+Most top level settings, such as biome and river sizes, can be found in the file [customization.yml](customization.yml).
 
 ## Installation
 
-Origen is just a config pack for the terra mod. Make sure you have terra installed first. You can find it on [modrinth](https://modrinth.com/plugin/terra). 
+Origen is just a config pack for the Terra mod. Make sure you have Terra installed first. You can find it on [Modrinth](https://modrinth.com/plugin/terra). 
 
-You can grab the latest release from the github [releases section](https://github.com/Rearth/Origen/releases/latest), from there just download the origen.zip file, and add it to your terra packs. For more information on installing terra config packs, see the [docs here](https://terra.polydev.org/config/pack-installation.html).
+You can grab the latest release from the Github [releases section](https://github.com/Rearth/Origen/releases/latest), from there just download the origen-v\*.\*.\*.zip file, and copy it to your Terra pack directory. For more information on installing Terra config packs, see the [docs here](https://terra.polydev.org/config/pack-installation.html).
 
 ---
 
@@ -43,6 +43,11 @@ Here is a full list of all biomes used in Origen. Note that some biomes are alre
 > ![2023-09-04_21 59 24_cropped](https://github.com/Rearth/Origen/assets/10100603/e7210ff4-d62d-42c8-93c2-39925123cdc5)
 Giant plateau with sharp overhangs surrounding it. These overhangs are supported by large stone pillars. A savanna-like environment is found at and around the bottom of the plateau, while the top is covered with all sorts of trees.
 
+**Gloomy Gorge**
+
+> ![2023-10-24_22 53 48_2](https://github.com/Rearth/Origen/assets/10100603/91e68bbe-5a3b-408b-93a8-b93b78b782a0)
+High mountains, with deep valleys and dark, eroded cliffs running through them. The mountainsides are glowing in the dark, and the whole environment is surrounded by all kinds of lush vegetation.
+
 **Snowy Spires**
 
 > ![2023-10-20_15 56 28](https://github.com/Rearth/Origen/assets/10100603/7a63755b-334c-4309-9ffc-8a6c913d5c8a)
@@ -62,6 +67,11 @@ An environment made of very high terracotta plateous, with large canyons and riv
 
 > ![2023-08-09_23 40 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c8fb50da-f7cd-4222-8200-b8dd74e2b6f6)
 The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosaur fossils, which usually have multiple "rib" segments and a chance to include a giant head on the front.
+
+**Arid Arboretum**
+
+> ![2023-10-25_22 09 37](https://github.com/Rearth/Origen/assets/10100603/cd92b628-a35d-456c-9b97-69e9bf12e609)
+Badlands biome that has been overtaken by an evergreen forest. The arid ground is a mix of grass and sand, with granite patches and giant terracotta pillars, covered in vegetation.
 
 **Bamboo Basins**
 
@@ -93,6 +103,11 @@ Terracotta-covered mountains, with flat areas inbetween, and some terraces along
 > ![2023-08-23_22 49 45](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/005a6e8c-fd1c-4433-b502-8ae629c765ae)
 A lush jungle environment, with massive eye-catching stone arches looping through the skies.
 
+**Sandy Splits**
+
+> ![2024-01-09_00 14 05](https://github.com/Rearth/Origen/assets/10100603/b8b73f8d-9bc4-41dd-83fb-861b710a018f)
+Large canyon biome that can carve through any land biome. Very deep, with terracotta walls and sand with vegetation at the bottom.
+
 **Mesa Monuments**
 
 > ![2023-07-26_23 29 34](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/cfb8098b-4cab-4e1d-b442-b0d2372fa024)
@@ -102,6 +117,16 @@ Covered by giant terracotta pillars, the mesa monuments biome is a warm badlands
 
 > ![2023-09-21_23 41 42](https://github.com/Rearth/Origen/assets/10100603/b31639fa-60fe-4c40-b0c4-a66617d2a9ed)
 Forested badlands biome, with large, overhanging terracotta boulders. The boulders are covered in leaf vines, and there are sparse tree patches on the floor.
+
+**White Wallows**
+
+> ![2023-10-25_23 12 48](https://github.com/Rearth/Origen/assets/10100603/1ef4fe83-dad1-4f00-8bed-1e83039bebb1)
+Identified by white trenches dug through eroded mountains, the white wallows are home to giant azalea trees. The mountains also house white flowers and deep valleys.
+
+** Icy Incisions**
+
+> ![2024-01-09_21 58 52](https://github.com/Rearth/Origen/assets/10100603/cb6730fb-dcc4-4756-936d-975bfe8ff73a)
+A deep, frozen trench carving through any other cold biome. Covered in webs of snow, with a few snow-covered trees at the bottom
 
 **Murky Marshlands**
 
@@ -206,6 +231,11 @@ Towering cliffs biome, only found at the bigger coasts. The biome has a mostly f
 
 > ![2023-09-08_17 59 02](https://github.com/Rearth/Origen/assets/10100603/5e903435-c998-4eea-a078-b0dfc81e4c3c)
 Medium-depth ocean, with giant stone arches under and on the surface. The arches are made mossy and partially green, with lush green foliage covering it.
+
+**Abyssal Alleys**
+
+> ![2023-10-24_21 25 44](https://github.com/Rearth/Origen/assets/10100603/4995f68d-3df5-4ef5-ad36-c95c8a92e58e)
+Deep ocean variant, with trenches reaching all the way down to bedrock level. There are large, semi-open caves to explore, with fossils at the bottom of the trenches and corals near the top.
 
 **Arctic Arches**
 
