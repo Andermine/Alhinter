@@ -1,6 +1,6 @@
-id: ORIGEN
+id: ALHINTER
 version: 1.0.0
-author: "Astrash, Sancires, Aureus, Rearth"
+author: "Astrash, Sancires, Aureus, Rearth, M3RGeo"
 
 generator: NOISE_3D
 
@@ -17,6 +17,7 @@ addons:
   config-distributors: "1.+"
   config-locators: "1.+"
   config-feature: "1.+"
+  config-number-predicate: "1.+"
   structure-terrascript-loader: "1.+"
   structure-sponge-loader: "1.+"
   language-yaml: "1.+"
@@ -25,6 +26,7 @@ addons:
   palette-block-shortcut: "1.+"
   structure-block-shortcut: "1.+"
   terrascript-function-sampler: "1.+"
+  locator-slant-noise-3d: "1.+"
 
 # ---
 # Biome distribution
@@ -42,7 +44,7 @@ addons:
 # Default biome distribution
 # biomes: $biome-distribution/presets/default.yml:biomes
 
-biomes: $biome-distribution/presets/rearth.yml:biomes
+biomes: $biome-distribution/presets/alhinter.yml:biomes
 # biomes: $biome-distribution/presets/single.yml:biomes
 
 # ---
@@ -96,6 +98,11 @@ stages:
   # also treated as trees like ice spikes.
   - id: trees
     type: FEATURE
+    blend:
+      amplitude: 30
+      sampler:
+        type: GAUSSIAN
+        salt: 2583
     
   # Used for small features placed underwater like sea-grass.
   - id: underwater-flora
@@ -104,6 +111,11 @@ stages:
   # Used for small features placed on the surface like tall grass and vines.
   - id: flora
     type: FEATURE
+    blend:
+      amplitude: 30
+      sampler:
+        type: GAUSSIAN
+        salt: 2934
   
   # Used to generate features that must come after all other features, such as snow on trees.
   - id: postprocessors
@@ -119,6 +131,7 @@ functions:
 samplers:
   "<<":
     - math/samplers/terrain.yml:samplers
+    - math/samplers/elevation.yml:samplers
     - math/samplers/simplex.yml:samplers
     - math/samplers/continents.yml:samplers
     - math/samplers/precipitation.yml:samplers
